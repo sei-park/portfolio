@@ -164,7 +164,8 @@
         sortBy: sort
       });
     });
-
+     
+    // portfolio 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
       filters.addEventListener('click', function() {
         isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
@@ -173,7 +174,7 @@
           filter: this.getAttribute('data-filter')
         });
         if (typeof aosInit === 'function') {
-          aosInit();
+          aosInit(); 
         }
       }, false);
     });
